@@ -35,7 +35,7 @@ if (!(Get-command -Module PowerShellGet).count -gt 0)
 
     msiexec.exe /package "$env:TEMP\$Filename" /qb!
 
-    Start-Sleep 80
+    Start-Sleep 30
     Remove-Item "$env:TEMP\$Filename"
     }
 }
