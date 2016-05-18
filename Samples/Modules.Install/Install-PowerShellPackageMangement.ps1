@@ -33,7 +33,7 @@ if (!(Get-command -Module PowerShellGet).count -gt 0)
     $WC.DownloadFile($version,"$env:TEMP\$Filename")
     $WC.Dispose()
 
-    msiexec.exe /package "$env:TEMP\$Filename"
+    msiexec.exe /package "$env:TEMP\$Filename" /qb!
 
     Start-Sleep 80
     Remove-Item "$env:TEMP\$Filename"
