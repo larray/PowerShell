@@ -40,7 +40,7 @@ if (!(Get-command -Module PowerShellGet).count -gt 0)
     }
 }
 
-Export-ModuleMember -Function Install-PowerShellPackageManagement
+Install-PowerShellPackageManagement
 
 
        
